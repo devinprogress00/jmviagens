@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra os melhores destinos com a JM Viagens! Oferecemos pacotes turísticos, passagens e suporte completo para uma viagem inesquecível. Solicite seu orçamento!">
+    <title>JM VIAGENS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+    <style>
+        /* Adiciona transições suaves para o menu mobile */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+        #mobile-menu.hidden {
+            transform: translateY(-10px);
+            opacity: 0;
+            pointer-events: none; /* Evita cliques no menu escondido */
+        }
+    </style>
+</head>
+<body class="bg-gray-200 text-gray-800 font-sans">
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 h-20 w-full bg-white shadow-md z-50">
+        <div class="w-full px-6 py-4 flex justify-between items-center">
+            <img class="top-h-20 w-40" src="logo.png" alt="JM VIAGENS">
+            <!-- Navigation for Medium screens and up -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#home" class="hover:text-orange-400 transition-colors">Home</a>
+                <a href="#sobre" class="hover:text-orange-400 transition-colors">Quem somos</a>
+                <a href="#contato" class="hover:text-orange-400 transition-colors">Contato</a>
+            </nav>
+            <!-- Hamburger Menu for Small screens -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-800 hover:text-indigo-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md absolute w-full">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-100 transition-colors">Home</a>
+            <a href="#sobre" class="block py-2 px-4 text-sm hover:bg-gray-100 transition-colors">Quem somos</a>
+            <a href="#contato" class="block py-2 px-4 text-sm hover:bg-gray-100 transition-colors">Contato</a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="pt-32 pb-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            <!-- Text Content -->
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Viva a experiência <br> de viajar com a <br> JM Viagens</h2>
+                <p class="text-lg text-gray-700 mb-6">Conectando você aos melhores destinos com <br> segurança, conforto e praticidade. <br> Oferecemos pacotes turísticos,<br> passagens e suporte completo <br> para tornar sua viagem <br> simples e inesquecível.</p>
+                <a href="#contato" class="inline-block"><button class="text-base font-medium text-white bg-orange-300 h-9 w-40 rounded-md transition-transform hover:scale-105">solicitar orçamento</button></a>
+            </div>
+            <!-- Image Content -->
+            <div class="flex items-center justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
+                    <img src="imgp.jpg" alt="" class="w-full h-full object-cover object-left">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Section Title and Description -->
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">Sobre a JM Viagens</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    A JM Viagens é uma agência de viagens dedicada a oferecer experiências únicas, conectando pessoas a destinos incríveis no Brasil e no mundo.
+                </p>
+                <p class="text-gray-700 leading-relaxed mt-4">
+                    Trabalhamos com responsabilidade, transparência e compromisso, sempre buscando as melhores opções de viagem de acordo com o perfil e a necessidade de cada cliente. Nosso objetivo é proporcionar viagens seguras, bem planejadas e cheias de boas memórias.
+                </p>
+            </div>
+
+            <!-- Mission, Vision, Values -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Mission Box -->
+                <div class="bg-white p-6 rounded-lg shadow-md transition-transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Nossa missão</h3>
+                    <p class="text-gray-700">Oferecer serviços de viagem com qualidade, confiança e atendimento personalizado.</p>
+                </div>
+                <!-- Vision Box -->
+                <div class="bg-white p-6 rounded-lg shadow-md transition-transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Nossa visão</h3>
+                    <p class="text-gray-700">Ser referência em soluções de viagens, reconhecida pela excelência no atendimento e pela satisfação dos clientes.</p>
+                </div>
+                <!-- Values Box -->
+                <div class="bg-white p-6 rounded-lg shadow-md transition-transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Nossos valores</h3>
+                    <ul class="text-gray-700 list-disc list-inside">
+                        <li>Compromisso com o cliente</li>
+                        <li>Transparência</li>
+                        <li>Qualidade no atendimento</li>
+                        <li>Responsabilidade e confiança</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Fale com a JM Viagens</h2>
+                <p class="text-gray-700 mt-2 max-w-3xl mx-auto">Tem interesse em nossos serviços ou deseja tirar alguma dúvida? Entre em contato conosco preenchendo o formulário abaixo. Nossa equipe retornará o mais breve possível.</p>
+            </div>
+            <div class="max-w-3xl mx-auto bg-gray-100 p-8 rounded-lg shadow-md">
+                <form id="contact-form" action="#" method="POST" class="grid grid-cols-1 gap-6">
+                    <div>
+                        <label for="name" class="font-medium text-gray-700">Nome completo</label>
+                        <input type="text" name="name" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-3 bg-white" placeholder="Digite seu nome" required>
+                    </div>
+                    <div>
+                        <label for="email" class="font-medium text-gray-700">E-mail</label>
+                        <input type="email" name="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-3 bg-white" placeholder="Digite seu e-mail para contato" required>
+                    </div>
+                    <div>
+                        <label for="message" class="font-medium text-gray-700">Mensagem</label>
+                        <textarea name="message" id="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-3 bg-white" placeholder="Conte-nos como podemos ajudar você" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="inline-block text-base font-medium text-white bg-orange-300 h-12 w-48 rounded-md transition-transform hover:scale-105">Enviar mensagem</button>
+                    </div>
+                </form>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-gray-700">Se preferir, fale conosco diretamente pelo WhatsApp</p>
+                <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20nos%20pacotes%20da%20JM%20Viagens." class="inline-block mt-4 bg-green-500 text-white px-4 py-2 rounded-md transition-transform hover:scale-105 font-medium">
+                    Falar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="mb-2">&copy; 2024 JM Viagens. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400">Este é um site de demonstração. A empresa JM Viagens e os serviços oferecidos são fictícios.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fecha o menu ao clicar em um link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Script do formulário de contato
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const subject = `Nova mensagem de ${name} (JM Viagens)`;
+            
+            const body = `
+                Você recebeu uma nova mensagem do site JM Viagens.\n
+                -------------------------------------\n
+                Nome: ${name}\n
+                E-mail: ${email}\n
+                Mensagem:\n
+                ${message}\n
+                -------------------------------------\n
+            `;
+
+            const mailtoLink = `mailto:joaocabralifpainfo23@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Abre o cliente de e-mail padrão do usuário
+            window.location.href = mailtoLink;
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+JMviagens
+VkdmQ9K3*Pxacbs
+
+jmviagens_admin
+VkdmQ9K3*Pxacbs
+-->
